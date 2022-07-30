@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }dz
-}
+        // Задание 1
+        int clientOS = 1;
+        if (clientOS == 0) {
+            System.out.println(" Установиет версию приложения для IOS по ссылке");
+        } if (clientOS == 1)  {
+                System.out.println(" Установите версию приложения для Android по ссылке");
+            }
+        }
+
+
+    }
