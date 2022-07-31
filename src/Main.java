@@ -79,11 +79,25 @@ public class Main {
             System.out.println(" предоставляем лимит в размере " + ( 1.5 * wage));
         }
 
-
-
-
-            
+        // Задание 7
+        int aGe = 25;
+        int saLary = 60_000;
+        int creditPeriod = 12;
+        int wantedSumm = 330_000;
+        double baseBankRate = 0.1*wantedSumm;
+        if (aGe < 23) {
+            System.out.println( baseBankRate + 0.01*wantedSumm);
+        } else if (aGe<30) {
+            System.out.println(baseBankRate+0.005*wantedSumm);
+        } else if (saLary>=80_000) {
+            System.out.println(baseBankRate - 0.007*wantedSumm);
         }
+
+
+        }
+
+
+
 
     }
 
