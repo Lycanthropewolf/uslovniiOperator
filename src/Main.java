@@ -24,7 +24,7 @@ public class Main {
         // Задание 3
         int year = 2016;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println(" Год является всокосным");
+            System.out.println(" Год является высокосным");
         } else {
             System.out.println(" год не является высокосным");
         }
@@ -38,7 +38,7 @@ public class Main {
 
         }
         // Задание 5
-        int monthNamder = 12;
+        int monthNamder = 147;
         switch (monthNamder) {
             case 12:
             case 1:
