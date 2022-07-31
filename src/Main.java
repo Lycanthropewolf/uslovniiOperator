@@ -81,18 +81,17 @@ public class Main {
 
         // Задание 7
         double aGe = 25;
-        double saLary = 60_000;
+        double saLary = 90_000;
         double wantedSumm = 330_000;
         boolean loanApproved23 = 0.5* saLary > ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12);
         boolean loanApproved30 = 0.5* saLary > ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12);
         boolean loanApproved80 = 0.5* saLary > ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12);
-        if ( loanApproved23 || loanApproved30 || loanApproved80 ) { System.out.println("Кредит одобрен");
-        } if (aGe < 23 && loanApproved23 ) {
-            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит" );
+        if (aGe < 23 && loanApproved23 ) {
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит Одобрен" );
         } else if (aGe<30 && loanApproved30 ) {
-            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей." );
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит Одобрен" );
         } else if (saLary>=80_000 && loanApproved80) {
-            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей." );
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит одобрен" );
         } else {
             System.out.println(" Кредит не одобрен");
         }
