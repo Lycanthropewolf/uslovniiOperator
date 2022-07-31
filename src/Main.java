@@ -65,5 +65,26 @@ public class Main {
         }
 
 
+        // Задание 6
+        int age = 15;
+        int wage = 34_000;
+        int solar = 1;
+        if (age >= 23) {
+            System.out.println(" предоставляем лимит в размере " + (3 * wage));
+        } else if (age < 23) {
+            System.out.println(" предоставляем лимит в размере " + (2 * wage));
+        } else if (wage >= 50_000 && wage < 80_000) {
+            System.out.println(" предоставляем лимит в размере " + ( 1.2 * wage) );
+        }else if (wage>=80_000){
+            System.out.println(" предоставляем лимит в размере " + ( 1.5 * wage));
+        }
+
+
+
+
+            
+        }
+
     }
-}
+
+
