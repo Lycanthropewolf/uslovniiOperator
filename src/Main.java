@@ -32,8 +32,36 @@ public class Main {
         int deliveryDistance = 95;
         if (deliveryDistance < 20) {
             System.out.println(" доставка занимает сутки");
+
         } else if (deliveryDistance >= 20 && deliveryDistance <= 100) {
             System.out.println(" доставка занимает двое суток");
+
+        }
+        // Задание 5
+        int monthNamder = 12;
+        switch (monthNamder) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println(" зимний месяц");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("весенний месяц");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println(" летний месяц");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println(" осенний месяц");
+                break;
+            default:
+                System.out.println(" такого месяца не существует");
         }
 
 
