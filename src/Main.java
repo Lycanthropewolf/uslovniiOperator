@@ -82,15 +82,13 @@ public class Main {
         // Задание 7
         int aGe = 25;
         int saLary = 60_000;
-        int creditPeriod = 12;
         int wantedSumm = 330_000;
-        double baseBankRate = 0.1*wantedSumm;
         if (aGe < 23) {
-            System.out.println( baseBankRate + 0.01*wantedSumm);
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " +((0.5* saLary)+ ((0.1+ 0.01) * wantedSumm)) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей." );
         } else if (aGe<30) {
-            System.out.println(baseBankRate+0.005*wantedSumm);
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " +((0.5* saLary)+ ((0.1+ 0.005) * wantedSumm)) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей." );
         } else if (saLary>=80_000) {
-            System.out.println(baseBankRate - 0.007*wantedSumm);
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " +((0.5* saLary)+ ((0.1- 0.007) * wantedSumm)) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей." );
         }
 
 
