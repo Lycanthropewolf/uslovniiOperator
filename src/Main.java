@@ -80,23 +80,27 @@ public class Main {
         }
 
         // Задание 7
-        double aGe = 25;
-        double saLary = 70_000;
-        double wantedSumm = 100_000;
+        double aGe = 20;
+        double saLary = 50_000;
+        double wantedSumm = 300_000;
         boolean loanApproved23 = 0.5* saLary > ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12);
         boolean loanApproved30 = 0.5* saLary > ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12);
         boolean loanApproved80 = 0.5* saLary > ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12);
         if (aGe < 23 && loanApproved23 ) {
-            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит Одобрен" );
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит одобрен" );
         } else if (aGe<30 && loanApproved30 ) {
-            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит Одобрен" );
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит одобрен" );
         } else if (saLary>=80_000 && loanApproved80) {
             System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит одобрен" );
-        } else {
-            System.out.println(" Кредит не одобрен");
+        } else if ( age<23|| !loanApproved23){
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит не одобрен");
+        } else if (aGe<30 && !loanApproved30) {
+           System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит не одобрен");
+        }else if (saLary>=80_000 && !loanApproved80){
+            System.out.println(" Максимальный платеж при ЗП  " + saLary +" равен " + ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12) + " рублей. Платеж по кредиту "  +  wantedSumm + " рублей. Кредит не одобрен");
         }
-            
-        }
+
+    }
 
 
     }
