@@ -67,22 +67,22 @@ public class Main {
 
         // Задание 6
         int age = 15;
-        int wage = 34_000;
+        int wage = 100_000;
         int solar = 1;
-        if (age >= 23) {
-            System.out.println(" предоставляем лимит в размере " + (3 * wage));
-        } else if (age < 23) {
-            System.out.println(" предоставляем лимит в размере " + (2 * wage));
-        } else if (wage >= 50_000 && wage < 80_000) {
-            System.out.println(" предоставляем лимит в размере " + ( 1.2 * wage) );
-        }else if (wage>=80_000){
-            System.out.println(" предоставляем лимит в размере " + ( 1.5 * wage));
+        if (age >= 23 && (wage >= 50_000 && wage < 80_000)) {
+            System.out.println(" предоставляем лимит в размере " + (3 * wage + 1.2*wage));
+        } else if (age >= 23 && wage>=80_000 ) {
+            System.out.println(" предоставляем лимит в размере " + (3 * wage + 1.5*wage));
+        } else if (age < 23 && wage >= 50_000 && wage < 80_000) {
+            System.out.println(" предоставляем лимит в размере " + ( 2 * wage +1.2*wage));
+        }else if (age < 23 && wage>=80_000 ){
+            System.out.println(" предоставляем лимит в размере " + ( 2 * wage +  1.5*wage));
         }
 
         // Задание 7
         double aGe = 25;
-        double saLary = 90_000;
-        double wantedSumm = 330_000;
+        double saLary = 70_000;
+        double wantedSumm = 100_000;
         boolean loanApproved23 = 0.5* saLary > ((((0.1+ 0.01)* wantedSumm) + wantedSumm) / 12);
         boolean loanApproved30 = 0.5* saLary > ((((0.1+ 0.005) * wantedSumm) + wantedSumm) / 12);
         boolean loanApproved80 = 0.5* saLary > ((((0.1- 0.007) * wantedSumm) + wantedSumm) / 12);
